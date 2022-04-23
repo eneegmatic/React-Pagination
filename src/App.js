@@ -21,7 +21,7 @@ import { getPost} from './services/postService'
      <div className='d-flex flex-column align-items-center justify-content-center gap-2 mx-auto'>
    <Container>
      {pending ? <Loading count={7}/>:
-     data.map((post,i) => <Card text={post.body} key={i}/>)
+     data.map((post,i) => <Card text={post.body} duration={i+1} key={i} />)
      }
    </Container>
     <Pagination count={Math.floor(+totalPage/8)} color="primary" onChange={handlePageClick}/>

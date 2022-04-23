@@ -1,5 +1,5 @@
 import axios from "axios";
-import {post} from '../constant/api'
+import {post} from '../constant/index'
 import {url} from '../utils/baseUrl'
 
 export const postApi = {
