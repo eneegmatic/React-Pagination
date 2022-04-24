@@ -1,9 +1,8 @@
-import axios from "axios";
 import {post} from '../constant/index'
-import {url} from '../utils/baseUrl'
+import { getRequest } from '../utils/axios'
 
 export const postApi = {
     getPost(page){
-      return axios.get(url+post.get+`?_page=${page}&_limit=7'`)
+      return getRequest(post.get,`?_page=${page}&_limit=7'`)
     }
 }
