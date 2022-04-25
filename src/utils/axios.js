@@ -26,7 +26,7 @@ instance.interceptors.response.use(
 )
 
 const responseBody = (response)=> {
-    const responseData = response.data;
+  const responseData = response.data;
   const responseHeaders = response.headers;
   return { responseData,responseHeaders }
 }

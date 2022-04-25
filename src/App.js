@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Loading, Card } from "./components";
 import { Pagination } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import { getPost } from "./services/postService";
+import { getPost } from "./services";
 
 const App = () => {
   const { data, pending, totalPage } = useSelector((state) => state.post);
